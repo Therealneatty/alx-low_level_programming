@@ -1,18 +1,13 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
-* print_alphabet - prints all the letters of the alphabet.
-*
-*Return: void.
-*/
+ * print_alphabet - prints latin lowercase letters
+ */
 void print_alphabet(void)
 {
 	char letter = 'a';
 
-	while (letter != 'z' + 1)
-	{
+	for (; letter <= 'z'; letter++)
 		_putchar(letter);
-		letter++;
-	}
 	_putchar('\n');
 }
